@@ -1,6 +1,6 @@
-@import "./node_modules/bootstrap/scss/bootstrap";
-@import "styles/_reset";
-@import "public/icons/ionicons.css";
+@import './node_modules/bootstrap/scss/bootstrap';
+@import 'styles/_reset';
+@import 'public/icons/ionicons.css';
 
 header {
   position: absolute;
@@ -12,7 +12,7 @@ header {
   .heading-wrapper {
     border-radius: 5px;
     padding: 30px 40px 20px;
-    background: #FFAD01;
+    background: #ffad01;
     color: #fff;
   }
 
@@ -20,23 +20,29 @@ header {
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
-    h5{ font-size: 1em; }
-    .icon{ float: left; font-size: 30px; }
+    h5 {
+      font-size: 1em;
+    }
+    .icon {
+      float: left;
+      font-size: 30px;
+    }
   }
 
   .right-area {
     margin-left: 45px;
-
   }
 }
 
-
 .intro-section {
   padding-top: 200px;
+  @media (max-width: 768px) {
+    padding-top: 350px;
+  }
   position: relative;
   background-size: cover;
   z-index: 1;
-  background-image: url("/images/bg.jpg");
+  background-image: url('/images/bg.jpg');
 
   &:before {
     content: '';
@@ -46,7 +52,7 @@ header {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, .2);
+    background: rgba(0, 0, 0, 0.2);
   }
 
   &:after {
@@ -78,24 +84,28 @@ header {
     margin-bottom: -70px;
   }
 
-  > h4 { color: #FFA600;  }
+  > h4 {
+    color: #ffa600;
+  }
 
   .information {
-    margin-top: 30px; margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     > li {
       display: block;
       margin: 5px 0;
-        > a {
-          color: #333333;
-        &:hover { text-decoration: none; color: #FFA804; }
+      > a {
+        color: #333333;
+        &:hover {
+          text-decoration: none;
+          color: #ffa804;
         }
+      }
     }
   }
 
-
   .social-icons {
     > li {
-
       > a {
         height: 35px;
         line-height: 35px;
@@ -117,9 +127,9 @@ header {
           top: 0;
           z-index: -1;
           border-radius: 20px;
-          background: #FFA804;
-          -webkit-transition: all .2s ease;
-          transition: all .2s ease;
+          background: #ffa804;
+          -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease;
           -webkit-transform: scale(0);
           transform: scale(0);
         }
@@ -128,12 +138,7 @@ header {
           -webkit-transform: scale(1);
           transform: scale(1);
         }
-
       }
-
     }
   }
 }
-
-
-
