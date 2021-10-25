@@ -60,7 +60,9 @@ function Index() {
                   </li>
                   <li>
                     <b>Full Stack Developer: </b>
-                    <a href="www.dadayazilim.com">@Dada Yazılım</a>
+                    <a href="https://www.dadayazilim.com" target="_blank">
+                      @Dada Yazılım
+                    </a>
                   </li>
                 </ul>
                 <ul className="social-icons">
