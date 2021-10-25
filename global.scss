@@ -109,7 +109,7 @@ header {
       > a {
         height: 35px;
         line-height: 35px;
-        width: 35px;
+        width: 200px;
         border-radius: 20px;
         overflow: hidden;
         z-index: 1;
@@ -137,6 +137,10 @@ header {
         &:hover:after {
           -webkit-transform: scale(1);
           transform: scale(1);
+        }
+
+        > span {
+          margin-left: 10px;
         }
       }
     }
