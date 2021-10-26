@@ -113,7 +113,7 @@ function Index() {
                       target="_blank"
                     >
                       <i className="ion-ios-book"></i>
-                      <span>Kitap Alıntıları</span>
+                      <span>Quotes</span>
                     </a>
                   </li>
                 </ul>
