@@ -109,7 +109,7 @@ function Index() {
                   </li>
                   <li>
                     <a
-                      href="https://www.1000kitap.com/azzlkn/alintilari"
+                      href="https://www.goodreads.com/quotes/list/150765304"
                       target="_blank"
                     >
                       <i className="ion-ios-book"></i>
