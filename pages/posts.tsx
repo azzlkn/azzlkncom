@@ -25,25 +25,17 @@ function Posts({ data }) {
       </div>
       {data.map((item, index) => {
         return (
-          <div className="pt-12" key={index}>
-            <div className="border-b border-sub pb-5">
-              <a
-                href={item.link}
-                className="block font-body text-lg font-semibold transition-colors hover:text-light"
-                target="_blank"
-              >
-                {item.title}
-              </a>
-              <div className="flex items-center pt-4 flex-wrap">
-                {item.categories.map((category, index) => (
-                  <span
-                    key={category + index}
-                    className="inline-block rounded-full bg-primary px-2 py-1 font-body text-sm mr-2"
-                  >
-                    {category}
-                  </span>
-                ))}
-                <p className="ml-auto font-body font-light text-gray">{item.pubDate}</p>
+          <div className={index === 0 ? 'pt-12' : 'pt-2'} key={index}>
+            <div className="border-b border-sub">
+              <div className="flex flex-wrap items-center pt-4">
+                <a
+                  href={item.link}
+                  className="block font-body text-lg font-semibold transition-colors hover:text-light"
+                  target="_blank"
+                >
+                  {item.title}
+                </a>
+                <p className="ml-auto mt-auto font-body font-light text-gray">{item.pubDate}</p>
               </div>
             </div>
           </div>
