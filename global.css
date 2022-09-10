@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Roboto';
+  background-color: theme('colors.dark');
+  color: theme('colors.white');
+}
+
+.container {
+  max-width: 600px;
+
+  @screen sm {
+    max-width: 700px;
+  }
+
+  @screen md {
+    max-width: 850px;
+  }
+}
