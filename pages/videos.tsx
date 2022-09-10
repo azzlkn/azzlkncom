@@ -32,10 +32,10 @@ function Videos({ data }) {
             <a href={item.link} target="_blank" className="lg:flex items-center justify-between text-white">
               <img src={item.thumbnail} className="object-cover w-full h-auto lg:w-96 lg:h-48 " alt="chevron right" />
 
-              <span className="px-6">
+              <div className="px-4">
                 <h4 className="font-body text-lg font-semibold text-white">{item.title}</h4>
                 <p className="font-body font-light text-white">{item.description}</p>
-              </span>
+              </div>
             </a>
           </div>
         );
