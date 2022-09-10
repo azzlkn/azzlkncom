@@ -8,21 +8,21 @@ const Footer = () => {
 
         <div className="flex items-center pt-5 sm:mr-0 sm:pt-0">
           <a href="https://github.com/azzlkn " target="_blank">
-            <i className="text-4xl text-primary dark:text-white hover:text-secondary dark:hover:text-secondary transition-colors bx bxl-github"></i>
+            <i className="text-4xl text-white hover:text-secondary  transition-colors bx bxl-github"></i>
           </a>
 
           <a href="https://medium.com/@azzlkn " target="_blank">
-            <i className="text-4xl text-primary dark:text-white pl-5 hover:text-secondary dark:hover:text-secondary transition-colors bx bxl-medium"></i>
+            <i className="text-4xl text-white pl-5 hover:text-secondary  transition-colors bx bxl-medium"></i>
           </a>
 
           <a href="https://www.linkedin.com/in/azzlkn" target="_blank">
-            <i className="text-4xl text-primary dark:text-white pl-5 hover:text-secondary dark:hover:text-secondary transition-colors bx bxl-linkedin-square"></i>
+            <i className="text-4xl text-white pl-5 hover:text-secondary  transition-colors bx bxl-linkedin-square"></i>
           </a>
           <a href="https://www.flickr.com/photos/azzlkn/" target="_blank">
-            <i className="text-4xl text-primary dark:text-white pl-5 hover:text-secondary dark:hover:text-secondary transition-colors bx bxl-flickr-square"></i>
+            <i className="text-4xl text-white pl-5 hover:text-secondary  transition-colors bx bxl-flickr-square"></i>
           </a>
           <a href="https://www.twitter.com/azzlkn " target="_blank">
-            <i className="text-4xl text-primary dark:text-white pl-5 hover:text-secondary dark:hover:text-secondary transition-colors bx bxl-twitter"></i>
+            <i className="text-4xl text-white pl-5 hover:text-secondary  transition-colors bx bxl-twitter"></i>
           </a>
         </div>
       </div>

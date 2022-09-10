@@ -37,7 +37,7 @@ const Navbar = () => {
                   <line x1="6" y1="6" x2="18" y2="18" />
                 </svg>
               </div>
-              <ul className="flex flex-col items-center justify-between min-h-[250px]">
+              <ul className="flex flex-col items-center justify-between min-h-[250px] text-white">
                 <li className="border-b  my-8 uppercase">
                   <a href="/">Anasayfa</a>
                 </li>
@@ -59,7 +59,7 @@ const Navbar = () => {
             </div>
           </section>
 
-          <ul className="hidden space-x-8 lg:flex">
+          <ul className="hidden space-x-8 lg:flex text-white">
             <li>
               <a href="/">Anasayfa</a>
             </li>
