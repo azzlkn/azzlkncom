@@ -32,15 +32,6 @@ function Index() {
         Bunların yanında Youtube kanalımda ve blog yazılarımda ise yazılım
         tecrübelerimi ve bilgilerimi aktarıyorum.
       </p>
-
-      <h2 className='pt-5 text-xl'>
-        Aylık olarak yazılım, teknoloji, kahve, kitap ve benzeri konularda
-        oluşturduğum bültenim{' '}
-        <a href='/luminar' className='text-light'>
-          "Luminar"
-        </a>
-        ı takip etmeni öneririm.
-      </h2>
     </div>
   );
 }
