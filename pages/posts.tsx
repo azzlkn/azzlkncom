@@ -20,32 +20,26 @@ export async function getStaticProps({ res }) {
 
 function Posts({ data }) {
   return (
-    <div className='container mx-auto px-3'>
+    <div className="container mx-auto px-3 md:px-0">
       <Head>
         <title>Yazılarım</title>
       </Head>
-      <h1 className='pt-3 text-3xl'>Yazılarım</h1>
-      <div className='pt-3'>
-        <p className='font-body font-light'>
-          Haftanın belirli günlerinde yazılım, teknoloji ve ilgilendiğim diğer
-          konularda blog yazıları paylaşıyorum.
-        </p>
-      </div>
+      <p className="font-body mb-10 font-thin">
+        Yazılım, teknoloji ve ilgilendiğim diğer konularda blog yazıları paylaşıyorum.
+      </p>
       {data.map((item, index) => {
         return (
           <div className={index === 0 ? 'pt-12' : 'pt-2'} key={index}>
-            <div className='border-b border-sub'>
-              <div className='flex flex-wrap items-center pt-4'>
+            <div className="border-b border-primary">
+              <div className="flex flex-wrap items-center pt-4">
                 <a
                   href={item.link}
-                  className='block font-body text-lg font-semibold transition-colors hover:text-light'
-                  target='_blank'
+                  className="block font-body text-lg font-semibold transition-colors hover:text-gray"
+                  target="_blank"
                 >
                   {item.title}
                 </a>
-                <p className='ml-auto mt-auto font-body font-light text-gray'>
-                  {item.pubDate}
-                </p>
+                <p className="ml-auto mt-auto font-body font-light text-sm text-gray">{item.pubDate}</p>
               </div>
             </div>
           </div>

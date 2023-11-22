@@ -3,19 +3,14 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Roboto';
-  background-color: theme('colors.dark');
-  color: theme('colors.white');
+  font-family: 'Minion Pro', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.5;
+  color: theme('colors.dark');
 }
 
 .container {
-  max-width: 600px;
-
-  @screen sm {
-    max-width: 700px;
-  }
-
-  @screen md {
-    max-width: 850px;
-  }
+  max-width: 512px;
 }

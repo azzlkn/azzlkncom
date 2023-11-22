@@ -10,7 +10,7 @@ var months = Array(
   'Eylül',
   'Ekim',
   'Kasım',
-  'Aralık',
+  'Aralık'
 );
 
 export default (pubDate) => {
