@@ -29,6 +29,13 @@ function Post({ data }) {
     <div className="mx-auto px-3 md:px-0">
       <Head>
         <title>{data.title}</title>
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:image" content="https://azzlkn.com/images/avatar.jpg" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={`https://azzlkn.com/posts/${data.id}`} />
+        <meta property="og:title" content={data.title} />
+        <meta property="og:description" content={`${data.content.slice(0,200).replace(/\n/g, "")}...`} />
+        <meta property="og:image" content="https://azzlkn.com/images/avatar.jpg" />
       </Head>
       <div className="border-b border-primary pb-4 mb-6 text-center">
         <h5 className="font-body text-sm font-light mb-2 text-gray">{dateFormatter(data.date)}</h5>
