@@ -4,7 +4,10 @@ import { useRouter } from 'next/router';
 const Navbar = () => {
   const router = useRouter();
   const checkActive = (href) => {
-    return router.pathname === href ? 'text-dark border-b' : 'text-gray';
+    if ((router.pathname.includes(href) && href !== '/') || router.pathname === href) {
+      return 'text-dark border-b';
+    }
+    return 'text-gray';
   };
 
   return (

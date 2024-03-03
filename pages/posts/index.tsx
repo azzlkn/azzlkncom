@@ -1,16 +1,14 @@
-import axios from 'axios';
 import Head from 'next/head';
 import React from 'react';
-import medium from '../lib/medium';
-const MEDIUM_LINK = 'https://medium.com/feed/@azzlkn';
+import { getSortedPostsData } from '../../lib/posts';
+import dateFormatter from '../../lib/dateFormatter';
+import Link from 'next/link';
 
 export async function getStaticProps({ res }) {
   try {
-    const res = await axios.get(MEDIUM_LINK);
-    const data = await medium(res);
+    const data = getSortedPostsData();
     return {
-      props: { data },
-      revalidate: 60
+      props: { data }
     };
   } catch (error) {
     res.status = 404;
@@ -29,20 +27,20 @@ function Posts({ data }) {
       </p>
       {data.map((item, index) => {
         return (
-          <div className={index === 0 ? 'pt-12' : 'pt-2'} key={index}>
-            <div className="border-b border-primary">
+          <Link href={'/posts/' + item.id} passHref key={index}>
+          <div className={index === 0 ? 'pt-12' : 'pt-2'}>
+            <div className="border-b border-primary cursor-pointer">
               <div className="flex flex-wrap items-center pt-4">
-                <a
-                  href={item.link}
+                <h1
                   className="block font-body text-lg font-semibold transition-colors hover:text-gray"
-                  target="_blank"
                 >
                   {item.title}
-                </a>
-                <p className="ml-auto mt-auto font-body font-light text-sm text-gray">{item.pubDate}</p>
+                </h1>
+                <p className="ml-auto mt-auto font-body font-light text-sm text-gray">{dateFormatter(item.date)}</p>
               </div>
             </div>
           </div>
+          </Link>
         );
       })}
     </div>

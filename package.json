@@ -13,10 +13,16 @@
   "license": "MIT",
   "dependencies": {
     "@tailwindcss/line-clamp": "^0.4.2",
+    "@tailwindcss/typography": "^0.5.10",
     "axios": "^0.27.2",
+    "gray-matter": "^4.0.3",
     "next": "^12.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-markdown": "^9.0.1",
+    "react-syntax-highlighter": "^15.5.0",
+    "rehype-raw": "^7.0.0",
+    "remark-gfm": "^4.0.0",
     "xml2js": "^0.4.23"
   },
   "devDependencies": {
