@@ -10,8 +10,7 @@ function Index() {
         Merhabalar! Balıkesir'de yaşayan bir yazılım geliştiriciyim. Geçmişte Dada isimli özel yazılım geliştirme
         ajansını kurdum ve Ekim 2022'den bu yana da Teyit isimli bilgi ekosistemi aktörlerinde eleştirel düşünme
         alışkanlığını ortak değer kılmayı amaçlayan bir doğrulama organizasyonunda ürün geliştirici olarak çalışıyorum.
-      </p>{' '}
-      <p className="pt-5"> Ayrıca yarı zamanlı olarak fotoğraf çekiyor, kahve ve şarap tüketiyorum.</p>
+      </p>
     </div>
   );
 }
